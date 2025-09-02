@@ -1,0 +1,287 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: #d9f2d9; /* light green page background */
+  color: #000;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-box {
+  background: #111; /* bright black */
+  color: #fff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.header-box h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Auth Section (email, password, search, etc.) */
+.auth-section {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.auth-section input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  width: 160px;
+  font-size: 14px;
+  background: #f0fdf0; /* soft light green input */
+  color: #000;
+}
+
+.auth-section input::placeholder {
+  color: #666; /* readable placeholder */
+}
+
+.auth-section button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  background: #28a745; /* green button */
+}
+
+/* Navigation Box */
+.box {
+  background: #a3d9a5; /* slightly darker light green */
+  padding: 15px 30px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 1200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.box nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.box nav a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.box nav a:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Sections */
+.sections-box {
+  background: #e0f7e0; /* very light green for sections */
+  border-radius: 12px;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 1200px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sections-box section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f5fff5; /* soft white card background */
+  border-radius: 10px;
+}
+
+.sections-box h2 {
+  color: #111; /* bright black */
+}
+
+.sections-box p,
+.sections-box a {
+  color: #333; /* dark gray for readability */
+}
+
+/* Search button */
+#searchBtn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#searchBtn:hover {
+  background-color: #218838;
+}
+
+/* Recipe Cards */
+.recipe-card {
+  background: #ffffff; /* soft white */
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding: 15px;
+  width: 100%;
+  max-width: 300px;
+  color: #000;
+}
+
+/* Contact links */
+#contact a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  color: #28a745;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .auth-section {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .auth-section input {
+    width: 100%;
+  }
+
+  .auth-section button {
+    flex: 1;
+    width: auto;
+  }
+
+  .box nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+footer {
+    background-color: #111; /* black footer */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+    margin-top: 20px;
+
+}
+.intaSendPayButton {
+    display: none; /* hidden initially, shown after trial ends */
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff; /* text color white */
+    background: linear-gradient(45deg, #2ecc71, #27ae60); /* bright green gradient */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* subtle shadow */
+    transition: transform 0.2s, background 0.3s;
+}
+
+.intaSendPayButton:hover {
+    background: linear-gradient(45deg, #27ae60, #2ecc71); /* hover swap */
+    transform: scale(1.05);
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.hero {
+  background-image: url('images/hero.jpg'); /* replace with your image link */
+  background-size: cover;
+  background-position: center;
+  height: 500px; /* adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* text color *
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* subtle overlay to make text pop */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  color: #000; /* bright black as per your theme */
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  color: #fff; /* white for contrast */
+  margin-bottom: 20px;
+}
+
+.hero-content button {
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #2e8b57; /* green matching your theme */
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hero-content button:hover {
+  background-color: #3cb371; /* slightly brighter green on hover */
+}
+.hero {
+  background-image: url('pexels-valeriya-19859334.jpg'); /* replace with your image link */
+  
+}
