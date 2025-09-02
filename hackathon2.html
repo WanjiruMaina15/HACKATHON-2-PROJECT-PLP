@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mama's Kitchen Recipes</title>
+  <link rel="stylesheet" href="hackathon2.css">
+  <!-- Font Awesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+<!-- IntaSend Inline JS SDK -->
+<script src="https://unpkg.com/intasend-inlinejs-sdk@4.0.7/build/intasend-inline.js"></script>
+
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>MAMA'S KITCHEN</h1>
+    <p>Delicious recipes from our kitchen to yours</p>
+      <div class="auth-section">
+      <input type="email" id="email" placeholder="Email">
+      <input type="password" id="password" placeholder="Password">
+      <button id="loginBtn">Login</button>
+      <button id="signupBtn">Sign Up</button>
+      <button id="forgotBtn">Forgot Password</button>
+    </div>
+    
+  </div>
+</section>
+
+
+    </div>
+  </header>
+
+  <div class="box">
+    <nav>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+<div class="sections-box">
+  <section id="home">
+    <h2>Home</h2>
+    <p>Welcome to Mama's Kitchen! Discover delicious recipes and cooking tips.</p>
+  </section>
+
+<section id="recipes">
+<h2 id="recipesHeader" style="cursor:pointer;">Recipes</h2>
+  <p>Explore a variety of recipes from appetizers to desserts.</p>
+  
+
+  <!-- Search bar -->
+   
+ <input type="text" id="searchInput" class="auth-input" placeholder="Search for a recipe">
+<button id="searchBtn" class="auth-button">Search</button>
+
+
+  <!-- Results will appear here -->
+  <div id="recipeResults"></div>
+
+  <div id="recipeResults" style="display:none;"></div>
+</section>
+<section id="ai-suggestions">
+  <h2>AI Recipe Suggestions</h2>
+  <input type="text" id="aiInput" placeholder="Ask AI for a suggestion">
+  <button id="aiBtn">Get Suggestion</button>
+  <div id="aiResult" style="margin-top:10px; font-weight:bold;"></div>
+</section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Learn more about Mama's Kitchen and our culinary journey.</p>    
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Get in touch with us for any inquiries or feedback.</p>
+    <p>Email: <a href="mailto:info@karmaitech.com">info@KarMaitech.com</a></p>
+    <p>Phone: <a href="tel:+254713854865">+254 713 854 865</a></p>
+    <p>Location: <a href="https://www.google.com/maps?q=Nairobi,+Kenya" target="_blank">Nairobi, Kenya</a></p>
+  </section>
+  </div>
+
+<section id="subscription">
+  <h2>Subscription</h2>
+  <p>Subscribe to unlock premium recipes!</p>
+
+  <!-- Free trial button -->
+  <button id="trialButton">Start 1-Week Free Trial</button>
+
+  <!-- Pay Now button (can hide initially if you want) -->
+  <button class="intaSendPayButton" data-amount="1.55" data-currency="USD" style="display:none;">Pay Now</button>
+</section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script type="module" src="hackathon2.js"></script>
+
+
+</body>
+<footer>
+    <p>&copy; 2025 YourWebsite. All rights reserved.</p>
+    <p>Designed with ❤️ by KarMai Tech</p>
+</footer>
+
+</html>
